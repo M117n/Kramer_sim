@@ -1,0 +1,8 @@
+***  SIMULATION PARAMETERS  *** 
+
+REDUCED DENSITY                    0.45836623
+NUMBER OF PARTICLES                  256
+PACKING                            0.23999999
+SIMULATION X BOX SIZE              8.23523099
+POTENTIAL ENERGY                2471.08147320
+SIMULATION STEPS                  500000
