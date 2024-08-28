@@ -1,0 +1,59 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Universidad de Sonora
+% Fisica Computacional
+%
+% Autor:
+% Martin Eduardo Manrique Arriola
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,spanish,twocolumn]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+\title{Reporte de Actividades de Verano}
+\author{Martin Eduardo Manrique Arriola}
+\date{14 de septiembre de 2015}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introducción}
+
+Durante mi estancia de verano en el área de Física Computacional, tuve la oportunidad de involucrarme en un proyecto de investigación relacionado con la simulación de coloides cargados bajo esfuerzos cortantes. Como parte del equipo, mi principal objetivo fue implementar y optimizar ciertas subrutinas en un programa preexistente, diseñado para estudiar las propiedades dinámicas y estructurales de estos sistemas.
+
+\section*{Metodología}
+
+El proyecto comenzó con un curso introductorio de mecánica estadística, impartido por el Dr. Ramón, que me proporcionó las bases teóricas necesarias para comprender los fenómenos que investigaría. Posteriormente, me integré al equipo de desarrollo y recibí el código base, creado por Alpixels, para realizar modificaciones y agregar nuevas funcionalidades.
+
+\subsection*{Implementación de la Lista de Verlet}
+
+Uno de los primeros desafíos fue la implementación de una lista de Verlet, una técnica utilizada para reducir el tiempo de cómputo al simular sistemas con un gran número de partículas. Esta lista de vecinos se actualiza periódicamente y permite optimizar el cálculo de fuerzas entre partículas, al considerar solo aquellas dentro de un radio específico, en este caso $r_{V} = 0.3\sigma$.
+
+\subsection*{Acomodo Cristalino Inicial}
+
+Para garantizar la estabilidad del sistema, implementamos un arreglo cristalino de tipo \textit{face-centered cubic} (fcc) en la configuración inicial de las partículas. Este tipo de empaquetamiento es ideal para estudiar la respuesta de cristales bajo fuerzas de tensión, proporcionando un punto de partida estructuralmente estable.
+
+\subsection*{Funciones de Correlación}
+
+Posteriormente, fui responsable de investigar e implementar funciones de correlación en el programa, comenzando con el cálculo del Desplazamiento Cuadrático Medio (MSD, por sus siglas en inglés). Esta métrica es esencial para analizar el comportamiento dinámico de las partículas en suspensión, evaluando su movimiento a lo largo del tiempo en diferentes direcciones (x, y, z).
+
+\subsection*{Optimización y Análisis}
+
+Inicialmente, las gráficas obtenidas del MSD presentaron un alto nivel de ruido, lo que dificultó la interpretación de los resultados. Tras un análisis detallado, ajustamos los parámetros del programa para reducir el ruido y obtener datos más claros y precisos. Además, implementé una subrutina adicional para calcular la función de distribución radial (GdR), la cual permite estudiar la estructura interna de la suspensión bajo diferentes condiciones de esfuerzo.
+
+\section*{Resultados y Discusión}
+
+Las mejoras implementadas en el código base resultaron en una reducción significativa del tiempo de cómputo, especialmente al aumentar el número de partículas en la simulación. Además, los análisis del MSD y la GdR proporcionaron información valiosa sobre la dinámica y la estructura del sistema, confirmando la eficacia del método empleado para optimizar el cálculo de interacciones.
+
+\section*{Conclusiones}
+
+A lo largo de este proyecto, adquirí habilidades avanzadas en técnicas de simulación y análisis computacional aplicadas a sistemas de partículas. El trabajo realizado no solo contribuyó a mi comprensión de la física detrás de la mecánica estadística, sino que también mejoró mi capacidad para resolver problemas complejos a través de la optimización de algoritmos.
+
+Este reporte refleja los logros alcanzados durante mi estancia de verano y resalta mi capacidad para abordar desafíos técnicos en el ámbito de la física computacional. 
+
+\end{document}
