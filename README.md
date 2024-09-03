@@ -1,6 +1,6 @@
-# Colloids Simulation Project
+# Colloids Simulation
 
-## Description
+ Description
 
 This repository contains a Fortran-based Brownian Dynamics simulation project. The primary goal of the project is to simulate the behavior of colloidal particles under various forces and stresses using the NVT ensemble and the Ermack & McCammon algorithm. The simulation includes calculations of radial distribution functions and uses the Verlet list for optimizing particle interaction computations.
 
